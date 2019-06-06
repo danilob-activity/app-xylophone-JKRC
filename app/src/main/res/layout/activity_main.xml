@@ -1,95 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.profdanilo.activity.MainActivity">
 
     <Button
         android:id="@+id/c_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="13dp"
         android:background="@color/red"
         android:onClick="playC"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/d_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/d_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:background="@color/orange"
         android:onClick="playD"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/e_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_key" />
 
     <Button
         android:id="@+id/e_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:background="@color/yellow"
         android:onClick="playE"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/f_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_key" />
 
     <Button
         android:id="@+id/f_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:background="@color/green"
         android:onClick="playF"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/g_key"
+        app:layout_constraintEnd_toEndOf="@+id/e_key"
+        app:layout_constraintStart_toStartOf="@+id/e_key"
+        app:layout_constraintTop_toBottomOf="@+id/e_key" />
 
     <Button
         android:id="@+id/g_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:background="@color/turquoise"
         android:onClick="playG"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/a_key"
+        app:layout_constraintEnd_toEndOf="@+id/f_key"
+        app:layout_constraintStart_toStartOf="@+id/f_key"
+        app:layout_constraintTop_toBottomOf="@+id/f_key" />
 
 
     <Button
         android:id="@+id/a_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:background="@color/blue"
         android:onClick="playA"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/b_key"
+        app:layout_constraintEnd_toEndOf="@+id/g_key"
+        app:layout_constraintStart_toStartOf="@+id/g_key"
+        app:layout_constraintTop_toBottomOf="@+id/g_key" />
 
     <Button
         android:id="@+id/b_key"
         style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
         android:background="@color/purple"
         android:onClick="playB"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/a_key" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/nameDev"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_key" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
